@@ -25,6 +25,39 @@ pricearray.push(344);
 pricearray.push(6777);
 
 
+/*
+3. Object Literals
+A comma-separated list of zero or more key-value pairs, enclosed in curly braces ({}).
+javascript
+const user = {
+  name: "Bob",
+  age: 30
+};*/
+
+//class
+
+
+class User{
+    name:String;
+    id:Number ;
+
+  constructor(id:number,name:String,){
+      this.name=name;
+      this.id=id;
+  }
+ 
+    userinfo():void{//method
+      console.log(`user name is ${this.name}\n user id is ${this.id}`)
+    }
+}
+
+let user1=new User(1,"ranvijay singh");
+
+let user2=new User(21,"jaikant");
+
+
+
+
 pricearray.forEach(element => {
     console.log(element);
 });
